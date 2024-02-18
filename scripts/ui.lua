@@ -14,7 +14,7 @@ local name = clonefunction(identifyexecutor)()
 protectfunction(name)
 
 local UI = {
-    Hydrogen = "https://projectevo.xyz/ui.lua",
+    Hydrogen = "https://raw.githubusercontent.com/delta-hydro/secret-host-haha/main/hydrogenv2_ui.lua",
     Delta = "https://raw.githubusercontent.com/delta-hydro/secret-host-haha/main/deltax_ui.lua",
     Codex = "https://cdn.codex.lol/public/main.txt",
     Evon = "https://raw.githubusercontent.com/MrLolegic/EvonUI/main/something.txt"
@@ -23,6 +23,8 @@ protectfunction(ui)
 
 local selected_ui = UI[name];
 protectfunction(selected_ui)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/delta-hydro/secret-host-haha/main/init_script.lua"))();
 
 -- lenny told me wait(1) was a good idea, i highly disagree but ok -rexi
 if selected_ui then
